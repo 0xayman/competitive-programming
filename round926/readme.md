@@ -1,5 +1,9 @@
 # Code forces round 926 div 2 solutions
 
+### Contest link:
+
+https://codeforces.com/contest/1929
+
 ### Note:
 
 - All solutions are written in Rust language.
