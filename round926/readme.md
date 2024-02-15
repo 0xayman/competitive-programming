@@ -9,7 +9,3 @@
 
 1. Sasha and The Beautiful Array
 2. Sasha and The Drawing
-
-### Find me on codeforces
-
-Username: 0xffayman
