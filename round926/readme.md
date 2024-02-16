@@ -13,3 +13,4 @@ https://codeforces.com/contest/1929
 
 1. Sasha and The Beautiful Array
 2. Sasha and The Drawing
+3. Sasha and the Casino

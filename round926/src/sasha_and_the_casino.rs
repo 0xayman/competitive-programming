@@ -1,20 +1,17 @@
 pub fn maximum_sum_less_than_k(k: usize, x: usize, a: usize) -> &'static str {
-    let mut bid: usize = 1;
-    let mut lost: usize = 0;
+    let mut prefix_sum: usize = 1;
 
     let mut arr = vec![0; x + 1];
-    arr[0] = bid;
-    lost += bid;
+    arr[0] = 1;
 
     for i in 1..(x + 1) {
-        while (bid * k) <= (lost + bid) {
-            bid += 1;
+        arr[i] = prefix_sum / (k - 1);
+        while arr[i] * (k - 1) <= prefix_sum {
+            arr[i] += 1;
         }
-        arr[i] = bid;
-        // println!("{:?}", arr);
-        lost += bid;
+        prefix_sum += arr[i];
 
-        if lost > a {
+        if prefix_sum > a {
             return "NO";
         }
     }
