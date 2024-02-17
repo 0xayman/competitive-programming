@@ -7,3 +7,4 @@ Username: 0xffayman
 ### Current contests:
 
 1. Round 926 Div 2
+2. Think-Cell round 1
