@@ -12,3 +12,4 @@ https://codeforces.com/contest/1930
 ### Solved problems
 
 1. Maximise The Score
+2. Permutation Printing
