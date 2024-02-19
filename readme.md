@@ -2,7 +2,7 @@
 
 ### Find me on codeforces
 
-Username: 0xffayman
+Username: <a href="https://codeforces.com/profile/0xffayman" target="_blank">0xffayman</a>
 
 ### Current contests:
 
