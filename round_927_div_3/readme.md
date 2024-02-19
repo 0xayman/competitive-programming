@@ -13,3 +13,4 @@ https://codeforces.com/contest/1932
 
 1. Thorns and Coins
 2. Chaya Calendar
+3. LR Remainders
