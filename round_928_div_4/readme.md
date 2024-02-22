@@ -14,3 +14,4 @@ https://codeforces.com/contest/1926
 1. Vlad an the Best of Five
 2. Vlad and Shapes
 3. Vlad and Sum of Sum of Digits
+4. Vlad and Division
