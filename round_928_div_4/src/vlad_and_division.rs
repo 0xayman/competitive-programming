@@ -25,23 +25,13 @@ fn vlad_and_division(arr: Vec<u32>) -> u32 {
         let bin_num = format!("{:031b}", num);
         let not_bin_num = bin_num.not();
 
-        *hashmap.entry(not_bin_num).or_insert(0) += 1;
-    }
+        *hashmap.entry(not_bin_num.clone()).or_insert(0) += 1;
 
-    for num in &arr {
-        let bin_num = format!("{:031b}", num);
+        if hashmap.contains_key(&bin_num) && hashmap[&bin_num] > 0 && hashmap[&not_bin_num] > 0 {
+            max_groups -= 1;
 
-        if hashmap.contains_key(bin_num.as_str()) {
-            let not_bin_num = bin_num.not();
-
-            if hashmap.contains_key(not_bin_num.as_str()) {
-                if hashmap[bin_num.as_str()] > 0 && hashmap[not_bin_num.as_str()] > 0 {
-                    max_groups -= 1;
-
-                    *hashmap.get_mut(bin_num.as_str()).unwrap() -= 1;
-                    *hashmap.get_mut(not_bin_num.as_str()).unwrap() -= 1;
-                }
-            }
+            *hashmap.get_mut(&bin_num).unwrap() -= 1;
+            *hashmap.get_mut(&not_bin_num).unwrap() -= 1;
         }
     }
 
